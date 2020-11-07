@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".appmodule.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textInputOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Value 1"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp" />
+        <EditText
+            android:id="@+id/inputValueOne"
+            android:layout_below="@id/textInputOne"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/shape_input_value"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:id="@+id/textInputTwo"
+            android:layout_below="@id/inputValueOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Value 2"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp" />
+        <EditText
+            android:id="@+id/inputValueTwo"
+            android:layout_below="@id/textInputTwo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/shape_input_value"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:id="@+id/textCalculate"
+            android:layout_below="@id/inputValueTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Calculate"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/shape_button_bcg"/>
+        <TextView
+            android:id="@+id/textCalculateValue"
+            android:layout_below="@id/textCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Calculated Value"
+            android:textSize="22sp"
+            android:textColor="@color/teal_700"
+            android:textAllCaps="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <RelativeLayout
+            android:id="@+id/layoutDisplay"
+            android:layout_below="@id/textCalculateValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp">
+            <TextView
+                android:id="@+id/textInputOneDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input One: -"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textInputOneValueDis"
+                android:layout_toEndOf="@id/textInputOneDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="-"
+                android:textColor="@color/teal_700"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/textInputOneDis" />
+
+            <TextView
+                android:id="@+id/textInputTwoDis"
+                android:layout_below="@id/textInputOneDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Input Two: -"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textInputTwoValueDis"
+                android:layout_below="@id/textInputOneDis"
+                android:layout_toEndOf="@id/textInputTwoDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="15dp"
+                android:text="-"
+                android:textColor="@color/teal_700"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/textInputTwoDis"
+                android:layout_marginLeft="23dp" />
+            <TextView
+                android:id="@+id/textAction"
+                android:layout_below="@id/textInputTwoDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Action: -"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textActionDis"
+                android:layout_below="@id/textInputTwoDis"
+                android:layout_toEndOf="@id/textAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="15dp"
+                android:text="-"
+                android:textColor="@color/teal_700"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/textAction"
+                android:layout_marginLeft="55dp" />
+            <TextView
+                android:id="@+id/textOutput"
+                android:layout_below="@id/textAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Output: -"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textOutputDis"
+                android:layout_below="@id/textActionDis"
+                android:layout_toEndOf="@id/textOutput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="15dp"
+                android:text="-"
+                android:textColor="@color/teal_700"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/textOutput"
+                android:layout_marginLeft="53dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
